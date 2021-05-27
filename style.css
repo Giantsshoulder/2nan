@@ -1,0 +1,156 @@
+#welcomegrid{
+  padding:0;
+  background-color: white;
+}
+#bodygrid{
+  display:grid;
+  grid-template-columns:1fr;
+  font-size: 30px;
+  z-index: 1;
+}
+img.absolute{
+  position: absolute;
+  left: 500px;
+  top: 400px;
+  filter: drop-shadow(5px 5px 5px grey)
+}
+a{
+  color:black;
+  text-decoration:none;
+}
+p{
+
+}
+h2{
+  font-size: 50px;
+  filter: drop-shadow(1px 1px 1px #000)
+}
+h3{
+  filter: drop-shadow(1px 1px 1px #000)
+}
+iframe{
+  filter: drop-shadow(5px 5px 5px grey)
+}
+#welcome{
+  margin:0;
+  text-align: center;
+}
+#welcomejpg{
+  padding-left: 50px;
+  text-align: right;
+}
+#news{
+  height: 1000px;
+  border-bottom:1px solid gray;
+  margin:0 0 0 0px;
+  padding:0 90px 0px 90px;
+}
+#gallery{
+  height: 1000px;
+  border-bottom:1px solid gray;
+  margin:0 0 0 0px;
+  padding:0 90px 0px 90px;
+}
+#Ads{
+  height: 350px;
+  border-bottom:1px solid gray;
+  padding:0 90px 0px 90px;
+  margin:0;
+}
+.active{
+  color:red;
+}
+@media(max-width:700px) {
+ #bodygrid{
+    display:block;
+  }
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: 고딕;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*메뉴  시작*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+#contents{
+  background-color: black;
+  display:grid;
+  grid-template-columns:10fr 1fr;
+}
+
+#main-menu > li {
+  float: left;
+  position: relative;
+}
+
+#main-menu > li > a {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 27px 36px;
+}
+#hart{
+  width: 100%;
+  height: auto;
+
+}
+#sub-menu {
+  position: absolute;
+  background: rgb(202, 207, 210);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in;
+}
+
+#sub-menu > li {
+  padding: 20px 36px;
+  border-bottom: 1px solid black;
+}
+
+#sub-menu > li >  a {
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+}
+
+#main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#main-menu > li >  a:hover {
+ opacity: 0.3;
+}
+
+#sub-menu > li >  a:hover {
+ opacity: 0.3;
+}
+/*메뉴  끝*/
+/*갤러리  시작*/
+#gallery > img{
+  display: block; margin: 0px auto;
+  width: 400px;
+  filter: drop-shadow(5px 5px 5px grey)
+}
+#numder{
+  text-align: center;
+  font-size: 40px;
+}
+.active{
+  color: red;
+}

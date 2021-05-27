@@ -1,0 +1,140 @@
+<!doctypehtml>
+<html>
+  <head>
+    <title>2nan on paper - Drawing</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+        <div id="welcomegrid">
+          <a href="index.html"><img src="2nan_on_paper.png" width="100%" height="auto"></a>
+        </div>
+        <div id="contents">
+        <div>
+        <nav role="navigation">
+          <ul id="main-menu">
+            <li><a href="Intro.html"><strong>· Intro</strong></a></li>
+            <li><a href="S.L.P.html"><strong>· S.L.P</strong></a>
+              <ul id="sub-menu">
+                <li><a href="#" aria-label="subemenu"><strong>· submenu</strong></a></li>
+                <li><a href="#" aria-label="subemenu"><strong>· submenu</strong></a></li>
+                <li><a href="#" aria-label="subemenu"><strong>· submenu</strong></a></li>
+                <li><a href="#" aria-label="subemenu"><strong>· submenu</strong></a></li>
+              </ul>
+            </li>
+            <li><a href="Drawing.html"><strong>· Drawing</strong></a></li>
+            <li><a href="Practice.html"><strong>· Practice</strong></a></li>
+          </div>
+          <div>
+            <li><img src="hart.png" id="hart"><li>
+            </ul>
+          </nav>
+          </div>
+          </div>
+    </header>
+    <div ID="bodygrid">
+      <div id="news"><h2>Practice</h2>
+      <p>페이지를 구축하기 위해 공부 중입니다. 코딩 공부를 위해 <strong>'생활코딩 '</strong> 페이지와 동영상을 참고하였습니다. 코딩에 흥미가 있거나 배우고 싶으신 분들에게 소개합니다.</p>
+      <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      ">
+      <input type="button"value="day" onclick="document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      ">
+      <input type="button" value="night" onclick="
+        if(document.querySelector('body').dataset.mode === 'day'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          document.querySelector('body').dataset.mode = 'night';
+          this.value='day';
+        } else {document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('body').dataset.mode = 'day';
+        this.value='night';
+        }
+      ">
+      <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          document.querySelector('#night_day').value = 'day';
+        } else {
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';
+          document.querySelector('#night_day').value = 'night';
+        }
+      ">
+      <input type="button" value="night" onclick="
+        if(this.value === 'night'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          this.value = 'day';
+        } else {
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';
+          this.value = 'night';
+        }
+      ">
+      <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+          target.style.backgroundColor='black';
+          target.style.color='white';
+          this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < 1){
+              alist[i].style.color='powderblue';
+              i=i+1;
+            }
+
+        } else {
+          target.style.backgroundColor='white';
+          target.style.color='black';
+          this.value = 'night';
+
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i<alist.length){
+              alist[i].style.color='black';
+            i=i+1;
+          }
+        }
+      ">
+      <input type="button" value="night" onclick="
+      nightdayhandler(this);
+      ">
+      <input type="button" value="h1" onclick="alert('hi')">
+      <input type="text" onchange="alert('onchange')">
+      <input type="text" onkeydown="alert('key down')">
+      <h3>Comparsion paerators & Boolean</h3>
+      <h4>===</h4>
+      <h5>1===1</h5>
+      <script>
+        document.write(1===1);
+      </script>
+      <h5>1===2</h5>
+      <script>
+        document.write(1===2);
+      </script>
+      <h5>1&lt;2</h5>
+      <script>
+        document.write(1<2);
+      </script>
+      <h5>1&lt;1</h5>
+      <script>
+        document.write(1<1);
+      </script>
+      </div>
+      <br>
+      <div id="Ads">
+        <h2>Ads</h2>
+          <li><a href="https://www.kslp.org/" target="_blank">한국언어재활사협회</a></li>
+          <li><a href="https://www.goegh.kr/main.php" target="_blank">광주하남교육지원청</a></li>
+          <li><a href="https://map.naver.com/v5/search/%EA%B9%80%EC%98%81%EC%88%98%ED%97%A4%EC%96%B4%EC%BB%AC%EB%A0%89%EC%85%98/place/36762575?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll&c=14112308.767434094,4535259.3809311725,13,0,0,0,dh&placePath=%2Fhome%3Fentry=pll" target="_blank">김영수헤어컬렉션</a></li>
+        </div>
+      </div>
+  </body>
+</html>

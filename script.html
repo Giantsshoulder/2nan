@@ -1,0 +1,54 @@
+<!doctypehtml>
+<html>
+  <head>
+    <title>2nan on paper - Welcome</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>script</h1>
+    <script>
+      var what = [1, 2, 3, 4, 5];
+      document.write(what[2]);
+      document.write(what[4]);
+    </script>
+    <h1>Array</h1>
+    <h2>Syntax</h2>
+    <script>
+      var who = ["holoy", "moloy", "christmas"];
+      document.write(who[1]);
+      document.write(who[0]);
+    </script>
+    <h2>add</h2>
+    <script>
+      who.push('2nan')
+    </script>
+    <h2>Count</h2>
+    <script>
+      document.write(who.length);
+    </script>
+    <h1>Loop</h1>
+    <ul>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while (i < 3) {
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+      }
+      document.write('<li>4</li>');
+    </script>
+    <h1>Loop & Array</h1>
+    <script>
+      var who = ["holoy", "moloy", "christmas", "2nan"];
+    </script>
+    <script>
+      var i = 0;
+      while(i < who.length){
+        document.write('<li><a href="https://www.naver.com/'+who[i]+'">'+who[i]+'</li>');
+        i = i + 1;
+      }
+    </script>
+    </ul>
+  </body>
+</html>

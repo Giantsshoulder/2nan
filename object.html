@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>Creats</h2>
+    <script>
+      var who = {
+         "programmer":"2nan",
+         "designer":"holoy"
+      };
+      document.write("programer:"+who.programmer+"<br>");
+      document.write("designer:"+who.designer+"<br>");
+      who.bookkeeper="moloy";
+      document.write("bookkeeper:"+who.bookkeeper+"<br>");
+      who["data scientist"]="christmas";
+      document.write("data scientist:"+who["data scientist"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+      for(var key in who){
+        document.write(key+':'+who[key]+'<br>');
+      }
+    </script>
+    <h2>property<!--객체 속 변수 ex)"programmer":"2nan"--> & method</h2>
+    <script>
+      /*same = var function showAll() {}*/
+      who.showAll=function(){
+        for(var key in this){
+          document.write(key+':'+this[key]+'<br>');
+        }
+      }
+      who/*객체*/.showAll/*객체 속 함수, method*/();
+    </script>
+  </body>
+</html>
